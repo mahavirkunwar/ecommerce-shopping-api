@@ -2,9 +2,7 @@
   "name": "ecommerce-api",
   "version": "0.1.0",
   "scripts": {
-    "start": "npm-run-all --serial lint:fix start:src",
-    "start:src": "nodemon -r dotenv/config --exec babel-node server.js",
-    "lint:fix": "./node_modules/.bin/eslint src --fix",
+    "start": "nodemon -r dotenv/config --exec babel-node server.js",
     "clean": "rimraf dist",
     "build": "npm-run-all --serial clean webpack",
     "webpack": "webpack --config ./.scripts/webpack.config.js"
